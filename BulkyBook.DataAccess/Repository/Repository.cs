@@ -76,7 +76,7 @@ namespace BulkyBook.DataAccess.Repository
             Remove(entity);
         }
 
-        private void Remove(T entity)
+        public void Remove(T entity)
         {
             dbSet.Remove(entity);
         }
@@ -85,5 +85,7 @@ namespace BulkyBook.DataAccess.Repository
         {
             dbSet.RemoveRange(entity);
         }
+
+ 
     }
 }

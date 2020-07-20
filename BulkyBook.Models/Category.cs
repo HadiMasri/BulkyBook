@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Text;
 
-namespace BulkyBook.DataAccess
+namespace BulkyBook.Models
 {
     public class Category
     {

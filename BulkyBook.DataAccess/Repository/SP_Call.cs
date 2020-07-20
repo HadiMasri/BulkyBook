@@ -47,7 +47,7 @@ namespace BulkyBook.DataAccess.Repository
             {
                 sqlCon.Open();
                 var value = sqlCon.Query<T>( procedureName, param, commandType: System.Data.CommandType.StoredProcedure);
-                return (T)Convert.ChangeType(value.FirstOrDefault(),typeof(T))
+                return (T)Convert.ChangeType(value.FirstOrDefault(), typeof(T));
             }
         }
 
