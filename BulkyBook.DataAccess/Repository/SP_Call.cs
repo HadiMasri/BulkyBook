@@ -35,7 +35,6 @@ namespace BulkyBook.DataAccess.Repository
             using(SqlConnection sqlCon = new SqlConnection(ConnectionString))
             {
                 sqlCon.Open();
-                var result = SqlMapper.QueryMultiple(sqlCon, procedureName, param, commandType: System.Data.CommandType.StoredProcedure);
                 sqlCon.Execute(procedureName, param, commandType: System.Data.CommandType.StoredProcedure);
             }
         }
